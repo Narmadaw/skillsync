@@ -1,0 +1,42 @@
+@use './../../styles//partials/mixin' as *;
+
+.header{
+    padding: 0.5rem 2.5rem 0 2.5rem;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        justify-content: flex-start;
+    }
+    &__logo-img{
+        width: 150px;
+        object-fit: cover;
+        object-position: center;
+        padding: 1rem;
+    }
+    &__nav-list{
+        display: flex;
+    }
+    &__link{
+        text-decoration: none;
+    }
+    &__nav-item{
+        list-style: none;
+        padding: 0 1rem;
+        line-height: 38px;
+       
+        &--sign-up{
+            @include primary-button-styles;
+            width: 150px;
+            margin-left: 1rem
+        }
+        &--sign-in{
+            @include primary-button-styles;
+            width: 150px;
+            
+        }
+    }
+   
+
+}

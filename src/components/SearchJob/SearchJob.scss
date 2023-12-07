@@ -1,0 +1,54 @@
+@use './../../styles/partials/fonts' as *;
+@use './../../styles//partials/mixin' as *;
+
+.job-search-wrapper{
+    padding: 0 2.5rem;
+
+    &__job-list{
+        list-style: none;
+    }
+    &__search-bar{
+        display: flex;
+    }
+   
+    &__job-item-link{
+        text-decoration: none;
+        color: $skillsync-blue;
+    }
+    &__job-item{
+        background-color: $skillsync-gray;
+        padding: 0;
+        margin: 0;
+    }
+    &__item{
+        padding: 0;
+        margin:0;
+    }
+    &__container{
+        display: flex;
+        width: 100%;
+    }
+    &__card{
+        width: 25%;
+        padding: 1rem 0;
+    }
+    &__card:nth-child(1){
+        width: 50%;
+    }
+    &__h-line{
+        border: 1px solid gainsboro;
+    }
+    &__search-input{
+        height: 38px;
+        margin: 0 1rem;
+        border-radius: 5px;
+        border: 1px solid $skillsync-blue;
+        padding-left: 1rem;
+    }
+   
+    &__search-btn{
+        @include primary-button-styles;
+        width: 10%;
+       
+    }
+}

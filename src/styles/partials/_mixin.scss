@@ -1,0 +1,55 @@
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+//primary colors
+
+$skillsync-blue: #1a91f0;
+$skillsync-gray: #f6f8fa;
+$skillsync-white: #FFFFFF;
+$skillsync-black: #13182C;
+$skillsync-yellow: #ffca00;
+$skillsync-green: #91dd4b;
+
+
+//button styles
+@mixin primary-button-styles(
+  $button-width: 100%,
+) {
+  height: 2.5rem;
+  width: $button-width;
+  color: $skillsync-white;
+  //padding: 0 2rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  background-color: #035D91;
+  background-repeat: no-repeat;
+  //background-position: 2vw;
+  border: none;
+
+  &:hover {
+    background-color: $skillsync-black;
+  }
+}
+
+@mixin cancel-button-styles(
+  $button-width: 100%,
+) {
+  height: 2.5rem;
+  width: $button-width;
+  color: $skillsync-blue;
+  padding: 0 2rem;
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  background-color: $skillsync-white;
+  background-repeat: no-repeat;
+  background-position: 2vw;
+  border: none;
+
+  &:hover {
+    background-color: $skillsync-gray;
+  }
+}

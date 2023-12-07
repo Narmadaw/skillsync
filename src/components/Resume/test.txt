@@ -1,0 +1,67 @@
+<div className='resume-container'>
+        <div>
+            <h2>Personal Details</h2>
+            <h1>{name.raw_name}</h1>
+        </div>
+        <div>
+          <h2>Work Experience</h2>
+          <ul>
+            {experience.map((item, index) => {
+              return (
+              <li key={index}>
+                <p>{item.title}</p>
+                <p>{item.start_date} - {item.end_date}</p>
+<p>
+                    {item.company} 
+                    </p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div>
+            <h2>Education</h2>
+            <ul>
+            {education.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        <p>{item.accreditation}</p>
+                        <p>{item.start_date} - {item.end_date}</p>
+                        <p>{item.establishment}</p>
+
+                        {/* Use map to render each location */}
+                        <p>
+                          {/* {item.location?.map((loc, index) => {
+                            return (
+                              <p key={index}>
+                                {loc.city} - {loc.country}
+                              </p>
+                            );
+                          })} */}
+                        </p>
+                      </li>
+                    );
+                  })}
+            </ul>
+          </div>
+          <div>
+            <h2>Certification</h2>
+            <ul>
+                {certificate.map((item, index) => {
+                return (
+                  <li key={index}>{item.name}</li>
+                );
+              })}
+            </ul>
+          </div>
+          <div>
+            <h2>Skills</h2>
+            <ul>
+                          {skills.map((item, index) => {
+                return (
+                  <li key={index}>{item.name}</li>
+                );
+              })}
+            </ul>
+          </div>
+      </div>
